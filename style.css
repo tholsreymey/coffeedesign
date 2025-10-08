@@ -1,0 +1,94 @@
+ body {
+      height: auto;
+      width: 100%;
+    }
+
+    .header {
+      width: 100%;
+      height: 12vh;
+      transition: background 0.3s ease;
+    }
+
+    /* Hero Image Styling */
+    .hero-img {
+      height: 100vh; /* full screen */
+      object-fit: cover;
+    }
+
+    /* Overlay for captions */
+    .carousel-caption {
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+    }
+
+    /* Responsive Typography */
+    .carousel-caption h1 {
+      font-size: clamp(1.5rem, 5vw, 3rem);
+    }
+
+    .carousel-caption p {
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+    }
+
+    /* Buttons */
+    .carousel-caption .btn {
+      font-size: clamp(0.9rem, 2.5vw, 1rem);
+      border-radius: 25px;
+    }
+
+   
+    .hero-img {
+  height: 100vh; /* default for desktop */
+  object-fit: cover;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .hero-img {
+    height: 70vh;
+  }
+}
+
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-img {
+    height: 50vh;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1600px) {
+  .hero-img {
+    height: 90vh;
+  }
+}
+ .img-fixed {
+    height: 200px;
+    object-fit: cover;
+  }
+
+ .store-btn {
+    height: 60px;
+    width: auto;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .store-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  .active-cart{
+    width: 18px;
+    height: 18px;
+    background-color: rgb(255, 196, 0);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    right: -25%;
+    top: 5%;
+  }
