@@ -24,7 +24,7 @@ const Displayproducts = (products = cart) => {
  
 }
 
-fetch("https://thoenthonny.github.io/Coffee-Api/data.json")
+fetch("https://tholsreymey.github.io/Coffeeapi/coffee.json")
   .then(res => res.json())
   .then(item => {
     cart = item
